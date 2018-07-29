@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hiyorin.systemvolumeplugin">
+    <application>
+        <receiver android:name="com.hiyorin.systemvolumeplugin.SystemVolumeReceiver">
+            <intent-filter>
+                <action android:name="android.media.VOLUME_CHANGED_ACTION" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>
