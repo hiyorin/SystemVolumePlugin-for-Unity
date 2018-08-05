@@ -70,6 +70,7 @@ namespace SystemVolume.Internal
 #elif UNITY_ANDROID
                 gameObject.AddComponent<SystemVolumeForAndroid>();
 #elif UNITY_IOS
+                gameObject.AddComponent<SystemVolumeForIOS>();
 #else
                 Debug.unityLogger.LogError(GetType().Name, "This platform is not supported.");
                 null;

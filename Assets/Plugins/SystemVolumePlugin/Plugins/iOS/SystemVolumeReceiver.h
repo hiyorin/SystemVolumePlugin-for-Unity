@@ -1,0 +1,3 @@
+
+@interface SystemVolumeReceiver : NSObject
+@end
