@@ -2,7 +2,7 @@
 A set of tools for Unity to allow handling system volume for Android and iOS.
 
 # Install
-SystemVolumePlugin.unitypackage
+SystemVolumePlugin-for-Unity.unitypackage
 
 # Usage
 ```cs
