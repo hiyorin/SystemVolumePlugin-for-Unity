@@ -12,7 +12,7 @@ namespace SystemVolume.Example
         private void Start()
         {
             _controller = new SystemVolumeController();
-            _controller.OnChangeVoluem = volume => {
+            _controller.OnChangeVolume = volume => {
                 _currentVoluemText.text = volume.ToString();
             };
         }
