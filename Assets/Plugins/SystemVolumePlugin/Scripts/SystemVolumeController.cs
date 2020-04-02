@@ -9,7 +9,7 @@ namespace SystemVolume
     {
         private readonly SystemVolumePlugin _plugin;
 
-        public ChangeSystemVolume OnChangeVoluem;
+        public ChangeSystemVolume OnChangeVolume;
 
         private float _volume = 1.0f;
 
@@ -45,14 +45,14 @@ namespace SystemVolume
         {
             if (_plugin != null)
                 _plugin.OnChangeVolume -= OnChangeSystemVolume;
-            OnChangeVoluem = null;
+            OnChangeVolume = null;
         }
 
         private void OnChangeSystemVolume(float volume)
         {
             _volume = volume;
-            if (OnChangeVoluem != null)
-                OnChangeVoluem.Invoke(volume);
+            if (OnChangeVolume != null)
+                OnChangeVolume.Invoke(volume);
         }
     }
 }

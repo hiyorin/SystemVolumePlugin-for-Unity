@@ -13,7 +13,7 @@ using SystemVolume;
 ```cs
 public void Example()
 {
-  var controllr = new SystemVolumeController();
+  var controller = new SystemVolumeController();
   controller.Volume = 0.5f;
   Debug.Log(controller.Volume);
 }
